@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otro Mundo - ¿Estás listo?</title>
+    <link rel="stylesheet" href="assets/flipclock.css">
+    <link rel="stylesheet" href="css/styles.css">		
+</head>
+<body>
+    <div class="container countdown-container">
+        <p class="txt-ready">¿Estás listo?</p>
+        <img class="logo" src="./img/logo-otromundo.png" alt="Logo Otro Mundo">
+        <p class="txt-remaining">Faltan</p>
+        <div class="countdown">
+        </div>
+        <p class="txt-follow-us">Seguinos en <br>
+            <a href="https://twitter.com/serotromundo">@SerOtroMundo</a></p>
+    </div>
+    <script src="assets/flipclock.min.js"></script>
+    <script type="text/javascript">
+        var el = document.querySelector('.countdown');
+
+        // Grab the current date
+        var currentDate = new Date();
+
+        // Set some date in the past. In this case, it's always been since Jan 1
+        var date  = new Date('2020-03-16');
+
+        var clock = new FlipClock(el, date, {
+            face: 'DayCounter',
+            showSeconds: false,
+            language: 'es',
+            countdown: true
+        });
+    </script>
+</body>
+</html>
