@@ -31,11 +31,8 @@
     <script type="text/javascript">
         var el = document.querySelector('.countdown');
 
-        // Grab the current date
         var currentDate = new Date();
-
-        // Set some date in the past. In this case, it's always been since Jan 1
-        var date  = new Date('2020-03-16');
+        var date  = new Date('Mon Mar 16 2020 09:30:00 GMT-0300');
 
         var clock = new FlipClock(el, date, {
             face: 'DayCounter',
